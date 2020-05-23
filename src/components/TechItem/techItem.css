@@ -1,0 +1,61 @@
+@keyframes icon-rotate-pulse {
+  from {
+    -webkit-filter: drop-shadow(0px 0px 0px var(--text-color-blue));
+    filter: drop-shadow(0px 0px 0px var(--text-color-blue));
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-filter: drop-shadow(0px 0px 22px var(--text-color-blue));
+    filter: drop-shadow(0px 0px 22px var(--text-color-blue));
+    transform: rotate(360deg);
+  }
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon > svg {
+  font-size: 60pt;
+  transition: transform 1.5s ease, color 1s ease;
+  margin: 0 50px 0 50px;
+}
+
+.icon > svg:hover {
+  transform: scale(1.5);
+}
+
+.icon.icon-color-blue > svg:hover,
+.active.icon-color-blue > svg {
+  color: var(--text-color-blue);
+  filter: drop-shadow(0px 0px 22px var(--text-color-blue));
+}
+
+.icon.icon-color-red > svg:hover,
+.icon-color-red.active > svg {
+  color: var(--text-color-red);
+  filter: drop-shadow(0px 0px 22px var(--text-color-red));
+}
+
+.icon.icon-color-yellow > svg:hover,
+.icon-color-yellow.active > svg {
+  color: var(--text-color-yellow);
+  filter: drop-shadow(0px 0px 22px var(--text-color-yellow));
+}
+
+.icon.icon-color-green > svg:hover,
+.icon-color-green.active > svg {
+  color: var(--text-color-green);
+  filter: drop-shadow(0px 0px 22px var(--text-color-green));
+}
+
+.icon.icon-color-purple > svg:hover,
+.icon-color-purple.active > svg {
+  color: var(--text-color-purple);
+  filter: drop-shadow(0px 0px 22px var(--text-color-purple));
+}
+
+.icon .deactive {
+  --primary-text-color: #d2d2d2;
+  filter: drop-shadow(0px 0px 0px);
+}

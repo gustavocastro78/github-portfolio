@@ -1,0 +1,52 @@
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-container {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
+.areas {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.area {
+  display: flex;
+  flex-grow: 2;
+  justify-content: center;
+}
+
+#knowledgement-areas,
+#description-area {
+  height: 200px;
+  text-align: center;
+}
+
+.tech-items {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 145.88px;
+  align-items: flex-end;
+}
+
+@keyframes info-show-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.show-info {
+  animation: info-show-animation 0.8s;
+}

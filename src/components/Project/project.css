@@ -1,0 +1,60 @@
+.project-contaier {
+  margin: var(--default-margin);
+  min-height: 200px;
+  position: relative;
+
+  width: 300px;
+  border: 1px solid #434343b0;
+  border-radius: 6px;
+}
+
+.project-name-container {
+  padding: var(--default-padding);
+  justify-content: space-between;
+  display: flex;
+}
+
+.project-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 220px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.project-name-icon {
+  font-size: 14pt;
+}
+
+.project-description-container {
+  padding: 0 var(--default-padding) var(--default-padding)
+    var(--default-padding);
+}
+
+.project-actions {
+  width: 100%;
+  text-align: end;
+  vertical-align: bottom;
+  position: absolute;
+  bottom: 0;
+  justify-content: flex-end;
+  padding: var(--default-padding);
+  background-color: var(--secondary-background-color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.project-actions > span,
+.project-actions > a {
+  margin-right: var(--default-margin);
+}
+
+.project-actions > * > svg {
+  transition: transform 1s ease, color 1s ease;
+}
+
+.project-actions > * > svg:hover {
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1.5);
+}

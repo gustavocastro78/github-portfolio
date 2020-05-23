@@ -1,0 +1,7 @@
+nav > a > svg {
+  transition: transform 1s;
+}
+
+nav > a > svg:hover {
+  transform: scale(1.3);
+}
