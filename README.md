@@ -26,4 +26,4 @@ The listing and categorization of the projects are implemented taking into consi
 
 ## :scroll: License
 
-This project is licensed under the [MIT license](https://github.com/debgustavocastro/github-portfolio/blob/master/LICENSE).
+This project is licensed under the [MIT license](https://github.com/gustavocastro78/github-portfolio/blob/master/LICENSE).
